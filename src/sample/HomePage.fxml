@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #112f4f;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomePageController">
+   <top>
+      <HBox prefHeight="24.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="48.0" prefWidth="600.0">
+               <children>
+                  <Text fill="#ebe2e2" layoutX="99.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to reminder ">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextArea fx:id="username" layoutX="306.0" layoutY="5.0" prefHeight="21.0" prefWidth="200.0" style="-fx-background-color: transparent;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="34.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <VBox prefHeight="342.0" prefWidth="26.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="342.0" prefWidth="27.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="43.0" prefWidth="547.0">
+               <children>
+                  <AnchorPane prefHeight="38.0" prefWidth="559.0">
+                     <children>
+                        <TextArea fx:id="Date" layoutX="276.0" prefHeight="38.0" prefWidth="200.0" />
+                        <Text fill="#f8f3f3" layoutX="108.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today is">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="55.0" prefWidth="547.0">
+               <children>
+                  <AnchorPane prefHeight="62.0" prefWidth="547.0">
+                     <children>
+                        <Button fx:id="setReminder" layoutX="231.0" layoutY="11.0" mnemonicParsing="false" text="Set Reminder" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="547.0">
+               <children>
+                  <AnchorPane prefHeight="34.0" prefWidth="641.0">
+                     <children>
+                        <Button fx:id="modifyReminder" layoutX="233.0" layoutY="5.0" mnemonicParsing="false" text="Modify Reminder" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="547.0">
+               <children>
+                  <AnchorPane prefHeight="34.0" prefWidth="698.0">
+                     <children>
+                        <Button fx:id="disableReminder" layoutX="231.0" layoutY="8.0" mnemonicParsing="false" text="DisableReminder" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="547.0">
+               <children>
+                  <AnchorPane prefHeight="34.0" prefWidth="821.0">
+                     <children>
+                        <Button fx:id="DeleteReminder" layoutX="232.0" layoutY="2.0" mnemonicParsing="false" text="Delete Reminder" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="547.0">
+               <children>
+                  <AnchorPane prefHeight="34.0" prefWidth="786.0">
+                     <children>
+                        <Button fx:id="enableReminder" layoutX="234.0" layoutY="2.0" mnemonicParsing="false" text="Enable Reminder" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="547.0">
+               <children>
+                  <AnchorPane prefHeight="34.0" prefWidth="762.0">
+                     <children>
+                        <Button fx:id="viewYourReminders" layoutX="236.0" layoutY="8.0" mnemonicParsing="false" text="View Your Reminders" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="547.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="547.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="back" layoutX="48.0" layoutY="2.0" mnemonicParsing="false" text="Logout" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
